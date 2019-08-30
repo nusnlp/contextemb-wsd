@@ -1,4 +1,4 @@
-# Word Sense Disambiguation (WSD) Using Contextualized Word Embeddings
+# Word Sense Disambiguation (WSD) Using Contextualized Word Representations
 This repository contains the source code for the paper
 
 ```
