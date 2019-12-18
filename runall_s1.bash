@@ -38,7 +38,7 @@ python train.py --bert-model bert-base-cased --dropout 0.1 --optimizer bert-adam
 for TESTSET in semeval2007 senseval2 senseval3 semeval2013 semeval2015; do
     bash test_postproc.sh ${TESTSET} ${MODELS_DIR}/semcor_glur_do0.1_enbert_s1_sd${SD}_model
 done
-# 4. LW+GLU (1sent+1sur)
+# 4. GLU+LW (1sent+1sur)
 python train.py --bert-model bert-base-cased --dropout 0.1 --optimizer bert-adam \
     --num-context 1 --use-glu --residual-glu --seed ${SD} \
     --devset-path ${WSD_DATA_DIR}/semeval2007/semeval2007.data.xml \
